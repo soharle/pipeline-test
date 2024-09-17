@@ -1,4 +1,4 @@
-name: CI
+name: PR
 on:
   push:
     branches: [main, staging]
@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: echo
-        run: echo "Hello, World!"
+        run: exit 1
